@@ -34,3 +34,22 @@ Ziel ist es, Navigation und Sensorik in einer virtuellen Welt zu testen und eige
 
 ```powershell
 wsl
+```
+### 2. Führe folgende Schritte im WSL-Terminal aus:
+
+```powershell
+# Wechsle in den Catkin-Workspace
+cd ~/catkin_ws
+
+# Kompiliere den Workspace (nur beim ersten Mal oder nach Änderungen)
+catkin_make_isolated
+
+# ROS-Umgebung aktivieren
+source devel_isolated/setup.bash
+
+# TurtleBot3-Modell setzen (wahlweise burger oder waffle)
+export TURTLEBOT3_MODEL=burger
+
+# Starte die Gazebo-Simulation
+roslaunch turtlebot3_gazebo turtlebot3_world.launch
+```
