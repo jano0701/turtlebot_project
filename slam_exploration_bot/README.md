@@ -5,16 +5,18 @@ readme_content = """
 # 🐢 TurtleBot3 Simulation Project
 
 Dieses Projekt simuliert den **TurtleBot3** mithilfe von **ROS Noetic** und **Gazebo**.  
-Ziel ist es, Navigation und Sensorik in einer virtuellen Welt zu testen und eigene ROS-Nodes zu entwickeln.
-
+Ziel ist es, ein autonomes Fahrzeug mit SLAM-Funktionalität zu entwickeln,
+das sich selbstständig in einer simulierten Umgebung bewegen, kartieren und navigieren kann.
 ---
 
 ## 📂 Inhalt
 
 - 🐢 **TurtleBot3** Steuerungspakete
-- 🧠 Eigene ROS-Nodes (`mein_erstes_pkg`)
+- 🧠 Eigene ROS-Nodes (`slam_exploration_bot`)
 - 🌍 Gazebo-Simulation
-- 🧰 ROS Messages (`turtlebot3_msgs`)
+- 🧰 ROS Mes
+- 🗺️ SLAM zur Kartenerstellung (`turtlebot3_slam`)
+- 🔍 Autonome Exploration (`slam_exploration_bot/scripts`)
 
 ---
 
