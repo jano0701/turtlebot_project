@@ -55,6 +55,6 @@ catkin_install_python(PROGRAMS
   scripts/frontier_search.py
   scripts/frontier_exploration.py
   scripts/pure_pursuit.py
-  scripts/slam_test.py
   DESTINATION ${CATKIN_PACKAGE_BIN_DESTINATION}
 )
+
