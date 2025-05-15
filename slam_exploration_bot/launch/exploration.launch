@@ -1,0 +1,8 @@
+<launch>
+  <!-- SLAM starten -->
+  <include file="$(find turtlebot3_slam)/launch/turtlebot3_slam.launch" />
+
+  <!-- Deine Exploration starten -->
+  <node name="frontier_exploration" pkg="slam_exploration_bot" type="frontier_exploration.py" output="screen"/>
+  <node name="pure_pursuit" pkg="slam_exploration_bot" type="pure_pursuit.py" output="screen"/>
+</launch>

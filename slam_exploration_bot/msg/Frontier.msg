@@ -1,2 +1,2 @@
+uint32 size
 geometry_msgs/Point centroid
-float32 size

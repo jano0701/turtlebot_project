@@ -1,5 +1,5 @@
 cmake_minimum_required(VERSION 3.0.2)
-project(slam_exploration_bot)  # ← Paketname aktualisiert
+project(slam_exploration_bot)
 
 ## Compile as C++11 (optional für zukünftige C++-Nodes)
 # add_compile_options(-std=c++11)
@@ -9,6 +9,9 @@ find_package(catkin REQUIRED COMPONENTS
   rospy
   std_msgs
   geometry_msgs
+  nav_msgs
+  sensor_msgs
+  tf
   message_generation
 )
 
@@ -33,7 +36,7 @@ generate_messages(
 ###################################
 
 catkin_package(
-  CATKIN_DEPENDS message_runtime std_msgs geometry_msgs
+  CATKIN_DEPENDS message_runtime std_msgs geometry_msgs nav_msgs sensor_msgs tf
 )
 
 ###########
@@ -48,17 +51,10 @@ include_directories(
 ## Install ##
 #############
 
-## Mark executable scripts (Python etc.) for installation
 catkin_install_python(PROGRAMS
   scripts/frontier_search.py
   scripts/frontier_exploration.py
+  scripts/pure_pursuit.py
   scripts/slam_test.py
   DESTINATION ${CATKIN_PACKAGE_BIN_DESTINATION}
 )
-
-#############
-## Testing ##
-#############
-
-# (Optional, falls Tests hinzugefügt werden)
-# catkin_add_nosetests(test)
