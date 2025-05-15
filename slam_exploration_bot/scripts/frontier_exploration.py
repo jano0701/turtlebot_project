@@ -16,7 +16,7 @@ from tf import TransformListener
 from tf.transformations import euler_from_quaternion
 
 class FrontierExploration:
-def **init**(self):
+def __init__(self):
 """
 Class constructor
 """
