@@ -1,1 +1,1 @@
-lab4/Frontier[] frontiers
+slam_exploration_bot/Frontier[] frontiers
