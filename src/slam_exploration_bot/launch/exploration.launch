@@ -1,0 +1,6 @@
+<launch>
+    <param name="debug" value="true" />
+    
+    <node name="pure_pursuit" pkg="slam_exploration_bot" type="pure_pursuit.py" output="screen"/>
+    <node name="frontier_exploration" pkg="slam_exploration_bot" type="frontier_exploration.py" output="screen"/>
+</launch>

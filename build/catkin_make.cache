@@ -1,0 +1,2 @@
+slam_exploration_bot
+-DCATKIN_DEVEL_PREFIX=/home/kis_projekt/catkin_ws/devel -DCMAKE_INSTALL_PREFIX=/home/kis_projekt/catkin_ws/install -G Unix Makefiles
